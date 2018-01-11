@@ -4,9 +4,9 @@
 * 
 * To get started with this repository 
 * 1. first configure your aws crendentials with [aws cli](https://aws.amazon.com/cli) 
-* 2. Then create a file named configuration.conf at the root of this project containing ```bucket``` and ```key``` values like 
+* 2. Then create a file named ```configuration.conf``` at the root of this project containing ```bucket``` and ```key``` values like 
 * ```
-* bucket = "terraform-xxxx"
+* bucket = "your-bucket-name-xxxx"
 * key = "my-subfolder/terraform.tfstate"
 * ```
 * 3. Initialize the repository at the root of this project by running
