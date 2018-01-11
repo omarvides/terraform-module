@@ -1,4 +1,4 @@
-# My Site Example
+# Terraform module example
 ## Getting started
 
 To get started with this repository
