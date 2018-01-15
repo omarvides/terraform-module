@@ -38,13 +38,18 @@ terraform {
 }
 
 module "mysite" {
-  source = "git@github.com:omarvides/terraform-resource.git"
+  source = "git@github.com:omarvides/terraform-resource.git//aws"
   instance_type = "t2.micro"
+  count = "${var.my_site_count}"
+  tag_name = "site-prod"
+  region = "eu-central-1"
 }
 
 module "myblog" {
-  source = "git@github.com:omarvides/terraform-resource.git"
+  source = "git@github.com:omarvides/terraform-resource.git//aws"
   instance_type = "t2.micro"
-
+  count = "${var.my_blog_count}"
+  tag_name = "blog-prod"
+  region = "eu-central-1"
 }
 

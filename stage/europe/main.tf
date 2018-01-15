@@ -42,6 +42,7 @@ module "mysite" {
   instance_type = "t2.micro"
   count = "${var.my_site_count}"
   tag_name = "site-stage"
+  region = "eu-central-1"
 }
 
 module "myblog" {
@@ -49,5 +50,6 @@ module "myblog" {
   instance_type = "t2.micro"
   count = "${var.my_blog_count}"
   tag_name = "blog-stage"
+  region = "eu-central-1"
 }
 
